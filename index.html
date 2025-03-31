@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIRBEZT PRO</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.157.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.157.0/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./logo.svg" alt=""bezt Logo></src>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Produtos</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="product-3d">
+        <canvas id="c"></canvas>
+      </div>
+
+      <div class="product-info">
+        <h1 class="title">AIRBEZT PRO</h1>
+        <h2 class="subtitle">Fone sem fio pra quem não ouve opinião alheia.</h2>
+        <p class="price">$ 499,00</p>
+        <p class="parcelas">ou 12x 49,90</p>
+        <p class="desc">
+          Estilo plugado no 220v. Conforto extremo, qualidade absurda e
+          personalidade de sobra. BEZT porque o comum nunca foi uma opção.
+        </p>
+        <div class="buttons">
+          <button class="btn-primary">Quero agora</button>
+          <button class="btn-outline">Coloca na sacola</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

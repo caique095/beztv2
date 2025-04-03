@@ -1,6 +1,6 @@
 :root {
   --blue: #295ef5;
-  --white: #ffffff;
+  --white: #e1e1e1;
   --black: #0f0f0f;
 }
 
@@ -39,7 +39,6 @@ html, body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background-color: var(--white);
   position: relative;
   z-index: 1;
 }
@@ -79,52 +78,65 @@ canvas {
 
 .product-info h1 {
   font-family: 'Source Code Pro', monospace;
-  font-weight: 800;
-  font-size: 2.4rem;
-  margin-bottom: 0.6rem;
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
 }
 
 .product-info h2 {
-  font-weight: 600;
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 1rem;
   line-height: 1.4;
 }
 
 .price {
   font-size: 2.5rem;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 0.3rem;
 }
 
 .parcelas {
-  margin-bottom: 1.5rem;
-  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
 }
 
 .desc {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
   line-height: 1.6;
-  max-width: 100%;
+  max-width: 90%;
 }
 
 .buttons {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   gap: 1rem;
   width: 100%;
+
+
+  @media (min-width: 768px) {
+  flex-direction: row;
 }
 
+.btn-primary,
+.btn-outline {
+  width: 100%;
+  max-width: 400px;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Estilo botão principal */
 .btn-primary {
   background: var(--black);
   color: var(--white);
   border: none;
-  padding: 1rem 2rem;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1.1rem;
-  font-weight: 600;
   transition: background 0.2s ease;
 }
 
@@ -132,15 +144,11 @@ canvas {
   background: #333333;
 }
 
+/* Estilo botão com borda */
 .btn-outline {
   background: transparent;
   border: 2px solid var(--black);
   color: var(--black);
-  padding: 1rem 2rem;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1.1rem;
-  font-weight: 600;
   transition: all 0.2s ease;
 }
 

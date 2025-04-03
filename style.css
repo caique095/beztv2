@@ -1,6 +1,6 @@
 :root {
   --blue: #295ef5;
-  --white: #e1e1e1;
+  --white: #ffffff;
   --black: #0f0f0f;
 }
 
@@ -34,11 +34,12 @@ html, body {
 
 .product-3d {
   width: 100%;
-  height: 60vh; /* ocupa 60% da altura no mobile */
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background-color: var(--white);
   position: relative;
   z-index: 1;
 }
@@ -65,7 +66,7 @@ canvas {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: auto; /* necessário para mobile com scroll */
+  height: auto;
   z-index: 2;
 }
 
@@ -78,35 +79,34 @@ canvas {
 
 .product-info h1 {
   font-family: 'Source Code Pro', monospace;
-  font-weight: 700;
-  font-size: 2.2rem;
-  margin-bottom: 0.5rem;
-  line-height: 1.2;
+  font-weight: 800;
+  font-size: 2.4rem;
+  margin-bottom: 0.6rem;
 }
 
 .product-info h2 {
-  font-weight: 400;
-  font-size: 1rem;
-  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
   line-height: 1.4;
 }
 
 .price {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: 800;
   margin-bottom: 0.3rem;
 }
 
 .parcelas {
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .desc {
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
   line-height: 1.6;
-  max-width: 90%;
+  max-width: 100%;
 }
 
 .buttons {
@@ -117,28 +117,30 @@ canvas {
 }
 
 .btn-primary {
-  background: var(--blue);
+  background: var(--black);
   color: var(--white);
   border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 10px;
+  padding: 1rem 2rem;
+  border-radius: 5px;
   cursor: pointer;
   font-size: 1.1rem;
+  font-weight: 600;
   transition: background 0.2s ease;
 }
 
 .btn-primary:hover {
-  background: #1c45c2;
+  background: #333333;
 }
 
 .btn-outline {
   background: transparent;
   border: 2px solid var(--black);
   color: var(--black);
-  padding: 0.75rem 1.5rem;
-  border-radius: 10px;
+  padding: 1rem 2rem;
+  border-radius: 5px;
   cursor: pointer;
   font-size: 1.1rem;
+  font-weight: 600;
   transition: all 0.2s ease;
 }
 
